@@ -6,16 +6,16 @@
 </p>
 
 <p align="center">
-  ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-  ![Selenium](https://img.shields.io/badge/Selenium-Automation-green?logo=selenium)
-  ![Chrome](https://img.shields.io/badge/Browser-Google%20Chrome-yellow?logo=googlechrome)
-  ![License](https://img.shields.io/badge/License-MIT-orange)
-  ![Status](https://img.shields.io/badge/Status-Active-success)
+  ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python) <br>
+  ![Selenium](https://img.shields.io/badge/Selenium-Automation-green?logo=selenium)<br>
+  ![Chrome](https://img.shields.io/badge/Browser-Google%20Chrome-yellow?logo=googlechrome)<br>
+  ![License](https://img.shields.io/badge/License-MIT-orange)<br>
+  ![Status](https://img.shields.io/badge/Status-Active-success)<br>
 </p>
 
 ---
 
-## 📌 About The Project
+## About The Project
 
 **SLCM Automatic Feedback Form Filler** is a Python automation project developed to simplify repetitive feedback form interactions on the Manipal University Jaipur (MUJ) Student Learning and Course Management (SLCM) portal.
 
@@ -23,7 +23,7 @@ The project uses **Selenium WebDriver** to automate browser interactions, identi
 
 Instead of manually opening and filling every feedback form, the bot processes multiple pending forms in one execution.
 
-### 🎯 Project Objectives
+### Project Objectives
 
 - Reduce repetitive manual work.
 - Automate the detection of pending feedback forms.
@@ -34,23 +34,23 @@ Instead of manually opening and filling every feedback form, the bot processes m
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
-| 🔍 Pending Form Detection | Automatically identifies pending feedback forms. |
-| ⏭️ Completed Form Skipping | Skips forms that are already completed. |
-| 🗂️ Multiple Form Processing | Opens multiple pending forms in separate browser tabs. |
-| ☑️ Radio Button Automation | Automatically selects configured Yes/No answers. |
-| 🔽 Dropdown Automation | Handles supported Yes/No dropdown questions. |
-| ✅ Answer Verification | Checks whether detected questions have selected answers. |
-| 🚀 Automatic Submission | Attempts to submit forms after filling checks pass. |
-| 📊 Terminal Summary | Displays the processing and submission counts. |
-| 🔐 Manual Login | Allows users to log in themselves without storing portal passwords. |
+|  Pending Form Detection | Automatically identifies pending feedback forms. |
+|  Completed Form Skipping | Skips forms that are already completed. |
+|  Multiple Form Processing | Opens multiple pending forms in separate browser tabs. |
+|  Radio Button Automation | Automatically selects configured Yes/No answers. |
+|  Dropdown Automation | Handles supported Yes/No dropdown questions. |
+|  Answer Verification | Checks whether detected questions have selected answers. |
+|  Automatic Submission | Attempts to submit forms after filling checks pass. |
+|  Terminal Summary | Displays the processing and submission counts. |
+|  Manual Login | Allows users to log in themselves without storing portal passwords. |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python 3** – Core programming language.
 - **Selenium WebDriver** – Browser automation.
@@ -59,7 +59,7 @@ Instead of manually opening and filling every feedback form, the bot processes m
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 slcmAutomaticFeedbackFormFiller/
@@ -90,7 +90,7 @@ slcmAutomaticFeedbackFormFiller/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 Follow these steps to install and configure the project.
 
@@ -177,7 +177,7 @@ You can configure:
 
 ---
 
-## 🚀 How To Operate The Project
+## How To Operate The Project
 
 This section explains how to run the bot from start to finish.
 
@@ -274,7 +274,7 @@ Press ENTER when prompted to close the browser and finish execution.
 
 ---
 
-## 🧠 How The Project Works
+## How The Project Works
 
 The project is divided into two primary Python modules.
 
@@ -325,7 +325,7 @@ This makes it possible to change the configured answer without modifying the Pyt
 
 ---
 
-## 🔐 Security & Privacy
+## Security & Privacy
 
 Security is important when automating a student portal.
 
@@ -337,7 +337,7 @@ Security is important when automating a student portal.
 
 ---
 
-## ⚠️ Limitations & Important Notes
+## Limitations & Important Notes
 
 - The current scanner processes feedback rows rendered on the currently visible feedback-list page. Pagination is not implemented.
 - The automation supports the radio-button and dropdown structures identified in the current MUJ feedback forms.
@@ -349,7 +349,7 @@ Security is important when automating a student portal.
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Error: No module named selenium
 
@@ -394,20 +394,6 @@ The portal may have changed its button structure. Inspect the questionnaire and 
 
 ---
 
-## 🔮 Future Improvements
-
-Potential improvements include:
-
-- [ ] Support for feedback-list pagination.
-- [ ] Individual answers for different questions.
-- [ ] Stronger server-side submission verification.
-- [ ] Dry-run mode without submission.
-- [ ] Detailed execution logs.
-- [ ] Graphical user interface.
-- [ ] Improved error recovery.
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
@@ -438,12 +424,7 @@ See the [LICENSE](LICENSE) file for more information.
 
 **Amishi Mathur**
 
-GitHub: [@YOUR-USERNAME](https://github.com/YOUR-USERNAME)
+GitHub: [@amishimmathur-ux](https://github.com/amishimmathur-ux)
 
 ---
 
-<p align="center">
-  Built with 🐍 Python and ⚙️ Selenium.
-  <br>
-  Automating repetitive work, one feedback form at a time.
-</p>
