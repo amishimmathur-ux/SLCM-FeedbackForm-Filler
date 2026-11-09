@@ -394,7 +394,7 @@ The portal may have changed its button structure. Inspect the questionnaire and 
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -410,7 +410,7 @@ Please do not include passwords, cookies, private student information, or other 
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**.
 
@@ -420,7 +420,7 @@ See the [LICENSE](LICENSE) file for more information.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Amishi Mathur**
 
