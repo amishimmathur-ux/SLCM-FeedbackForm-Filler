@@ -38,15 +38,15 @@ Instead of manually opening and filling every feedback form, the bot processes m
 
 | Feature | Description |
 |---|---|
-|  Pending Form Detection | Automatically identifies pending feedback forms. |
-|  Completed Form Skipping | Skips forms that are already completed. |
-|  Multiple Form Processing | Opens multiple pending forms in separate browser tabs. |
-|  Radio Button Automation | Automatically selects configured Yes/No answers. |
-|  Dropdown Automation | Handles supported Yes/No dropdown questions. |
-|  Answer Verification | Checks whether detected questions have selected answers. |
-|  Automatic Submission | Attempts to submit forms after filling checks pass. |
-|  Terminal Summary | Displays the processing and submission counts. |
-|  Manual Login | Allows users to log in themselves without storing portal passwords. |
+| Pending Form Detection | Automatically identifies pending feedback forms. |
+| Completed Form Skipping | Skips forms that are already completed. |
+| Multiple Form Processing | Opens multiple pending forms in separate browser tabs. |
+| Radio Button Automation | Automatically selects configured Yes/No answers. |
+| Dropdown Automation | Handles supported Yes/No dropdown questions. |
+| Answer Verification | Checks whether detected questions have selected answers. |
+| Automatic Submission | Attempts to submit forms after filling checks pass. |
+| Terminal Summary | Displays the processing and submission counts. |
+| Manual Login | Allows users to log in themselves without storing portal passwords. |
 
 ---
 
@@ -179,21 +179,23 @@ You can configure:
 
 ## How To Operate The Project
 
-This section explains how to run the bot from start to finish.
+Follow these simple steps to run the bot.
 
-### Step 1: Open the Project
+### 1. Open the Project
 
 Open the project folder in Visual Studio Code.
 
-### Step 2: Activate the Virtual Environment
+### 2. Activate the Virtual Environment
+
+Open the VS Code terminal and run:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-### Step 3: Configure Your Answer
+### 3. Configure Your Answer
 
-Open `config.json` and select your intended default answer:
+Open `config.json` and choose your default answer:
 
 ```json
 {
@@ -201,56 +203,39 @@ Open `config.json` and select your intended default answer:
 }
 ```
 
-### Step 4: Run the Main Program
+You can choose `"YES"` or `"NO"`.
 
-In the VS Code terminal, execute:
+### 4. Run the Bot
+
+Execute the following command in the terminal:
 
 ```bash
 python main.py
 ```
 
-### Step 5: Log In to MUJ SLCM
+### 5. Log In to MUJ SLCM
 
 A Google Chrome window will open.
 
-1. Log in to your MUJ SLCM account manually.
-2. Navigate to the Feedback List page.
-3. Make sure the feedback forms table is visible.
-4. Return to the VS Code terminal.
-5. Press ENTER when prompted.
+- Log in to your MUJ SLCM account manually.
+- Navigate to the **Feedback List** page.
+- Make sure the feedback forms table is visible.
+- Return to the terminal and press ENTER.
 
-### Step 6: Pending Forms Detection
+### 6. Let the Bot Work!
 
-The bot scans the feedback table and identifies:
+Once you press ENTER, the bot automatically:
 
-- Pending feedback forms.
-- Already completed feedback forms.
+- Finds all pending feedback forms displayed on the page.
+- Skips forms that are already completed.
+- Opens each pending form in a new browser tab.
+- Fills the configured Yes/No answers.
+- Checks whether the answers have been selected.
+- Attempts to submit forms that pass the filling checks.
 
-Completed forms are automatically skipped.
+### 7. Check the Results
 
-The bot displays the list of pending forms before starting.
-
-### Step 7: Automatic Form Filling
-
-After you press ENTER, the bot:
-
-1. Opens a pending feedback form in a new browser tab.
-2. Waits for the questionnaire to load.
-3. Detects supported Yes/No radio buttons.
-4. Selects the configured answer.
-5. Fills supported Yes/No dropdown questions.
-6. Verifies the selected answers.
-7. Checks for filling errors.
-
-### Step 8: Automatic Submission
-
-If the filling checks pass, the bot locates the Submit button and attempts to click it.
-
-Forms with detected errors or incomplete supported controls are skipped for submission.
-
-### Step 9: Final Summary
-
-After processing all detected forms, the terminal displays a summary.
+After processing all the forms, the terminal displays a summary of the operation.
 
 Example:
 
@@ -266,11 +251,13 @@ Forms requiring attention: 0
 
 *The numbers above are illustrative.*
 
-Check the SLCM portal afterwards to confirm that submitted forms are actually marked Completed.
+Check your SLCM portal to confirm that the submitted forms are actually marked **Completed**.
 
-### Step 10: Close the Browser
+### 8. Close the Browser
 
-Press ENTER when prompted to close the browser and finish execution.
+Press ENTER when prompted to close Chrome and finish the execution.
+
+**That's it! Your feedback automation is ready to use.** 🚀
 
 ---
 
@@ -427,4 +414,3 @@ See the [LICENSE](LICENSE) file for more information.
 GitHub: [@amishimmathur-ux](https://github.com/amishimmathur-ux)
 
 ---
-
