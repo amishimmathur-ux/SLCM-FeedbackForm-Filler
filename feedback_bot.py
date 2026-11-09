@@ -196,3 +196,64 @@ def debug_controls(driver):
             continue
 
     print("\n========== DIAGNOSTICS COMPLETE ==========")
+
+    
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
+import time
+
+
+def submit_feedback_form(driver):
+
+    print("\n========== SUBMITTING FEEDBACK ==========")
+
+    # Find the visible Submit button
+    submit_buttons = driver.find_elements(
+        By.XPATH,
+        "//button[normalize-space()='Submit'] | "
+        "//input[@type='submit'] | "
+        "//input[@value='Submit']"
+    )
+
+    submit_button = next(
+        (
+            button for button in submit_buttons
+            if button.is_displayed() and button.is_enabled()
+        ),
+        None
+    )
+
+    if submit_button is None:
+        print("Submit button not found!")
+        return False
+
+    # Scroll to the button
+    driver.execute_script(
+        "arguments[0].scrollIntoView({block: 'center'});",
+        submit_button
+    )
+
+    time.sleep(0.5)
+
+    # Click Submit
+    submit_button.click()
+
+    print("Submit button clicked.")
+
+    # Handle a JavaScript confirmation alert, if one appears
+    try:
+        alert = WebDriverWait(driver, 3).until(
+            lambda d: d.switch_to.alert
+        )
+        print("Confirmation alert found:", alert.text)
+        alert.accept()
+        print("Confirmation accepted.")
+
+    except TimeoutException:
+        pass
+
+    time.sleep(2)
+
+    print("Submission action completed.")
+    return True
