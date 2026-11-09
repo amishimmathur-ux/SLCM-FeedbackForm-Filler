@@ -1,0 +1,44 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+
+# Browser data
+chromedriver
+chromedriver.exe
+browser_profile/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Screenshots and private portal data
+screenshots/*
+!screenshots/.gitkeep
+
+# Local configuration overrides
+config.local.json
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
